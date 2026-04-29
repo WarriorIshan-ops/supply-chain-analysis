@@ -3,7 +3,8 @@
 ## 📊 Project Overview
 
 This project analyzes supply chain delays, supplier performance, and operational efficiency using SQL and Power BI.
-
+## 📊 Dashboard Preview
+![Dashboard](images/dashboard_preview.png)
 ## 🎯 Objective
 
 * Identify delivery delays
