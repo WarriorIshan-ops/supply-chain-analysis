@@ -1,4 +1,6 @@
-# 📦 Supply Chain Delay & Performance Analysis
+# Supply Chain Delay & Performance Analysis
+
+![Dashboard](images/dashboard_preview.png)
 
 ## 📊 Project Overview
 
@@ -18,12 +20,6 @@ This project analyzes supply chain delays, supplier performance, and operational
 * SQL (SQLite)
 * Power BI
 * Excel (data preparation)
-
----
-
-## 📷 Dashboard Preview
-
-![Dashboard](images/dashboard_preview.png)
 
 ---
 
