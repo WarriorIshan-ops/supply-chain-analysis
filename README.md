@@ -1,64 +1,99 @@
-# Supply Chain Delay & Performance Analysis
+# 📦 Supply Chain Delay & Performance Analysis
 
 <img src="images/dashboard_preview.png" width="800"/>
 
+---
+
 ## 📊 Project Overview
 
-This project analyzes supply chain delays, supplier performance, and operational efficiency using SQL and Power BI.
+This project analyzes supply chain performance with a focus on **delivery delays, supplier efficiency, and regional performance** using SQL and Power BI.
 
-## 🎯 Objective
-
-* Identify delivery delays
-* Analyze supplier performance
-* Evaluate regional efficiency
-* Support process optimization decisions
+The goal is to identify bottlenecks and provide **data-driven insights for operational improvement**.
 
 ---
 
-## 🛠 Tools Used
+## 🎯 Objectives
 
-* SQL (SQLite)
-* Power BI
-* Excel (data preparation)
+* Identify key factors contributing to delivery delays
+* Evaluate supplier performance and reliability
+* Analyze regional efficiency differences
+* Support process optimization and decision-making
+
+---
+
+## 🛠 Tools & Technologies
+
+* **SQL (SQLite)** – Data exploration and analysis
+* **Power BI** – Interactive dashboard and visualization
+* **Excel** – Data cleaning and preparation
 
 ---
 
 ## 📈 Key Insights
 
-* 58.8% of orders are delayed
-* Supplier A contributes highest delay volume
-* Netherlands has the highest delay rate
-* Total delay days: 811 across 500 orders
+* **58.8%** of orders are delayed
+* **Supplier A** contributes the highest delay volume
+* **Netherlands** shows the highest delay rate
+* **811 total delay days** across **500 orders**
+
+---
+
+## 📊 Dashboard Features
+
+* KPI cards (Total Orders, Delay %, Total Delay Days)
+* Supplier performance analysis
+* Regional delay comparison
+* On-time vs delayed order distribution
+* Interactive slicers (Region, Supplier, Delivery Status)
 
 ---
 
 ## 📂 Project Structure
 
-* `data/` → dataset files
-* `sql/` → analysis queries
-* `dashboard/` → Power BI file (.pbix)
-* `images/` → dashboard screenshots
+```
+supply-chain-analysis/
+│
+├── data/
+│   └── supply_chain_dataset.csv
+│
+├── sql/
+│   ├── 01_data_exploration.sql
+│   ├── 02_supplier_analysis.sql
+│   ├── 03_region_analysis.sql
+│   ├── 04_delay_impact.sql
+│
+├── dashboard/
+│   └── supply_chain_dashboard.pbix
+│
+├── images/
+│   └── dashboard_preview.png
+│
+└── README.md
+```
 
 ---
 
 ## 📊 Key Analysis Queries
 
-* Delay % by Supplier
-* Delay % by Region
-* On-time vs Delayed Orders
-* Total Delay Contribution
+* Delay percentage by supplier
+* Delay percentage by region
+* On-time vs delayed orders
+* Supplier contribution to total delay days
 
 ---
 
 ## 🚀 Business Impact
 
-This analysis helps:
+This analysis enables:
 
-* Improve supplier selection
-* Optimize delivery processes
-* Reduce operational inefficiencies
-* Support data-driven decision-making
+* Better supplier evaluation and selection
+* Identification of delay bottlenecks
+* Improved delivery performance
+* More efficient, data-driven decision-making
 
 ---
-## 📂 Project Structure
 
+## 👤 Author
+
+**Ishan Awasthi**
+Aspiring Data Analyst | SQL | Power BI | Supply Chain Analytics
