@@ -60,3 +60,5 @@ This analysis helps:
 * Support data-driven decision-making
 
 ---
+## 📂 Project Structure
+
