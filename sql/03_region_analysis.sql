@@ -1,11 +1,15 @@
+/*
+Goal: Identify regions with highest delays
+*/
+
 SELECT 
     Region,
-    COUNT(*) AS Total_Orders,
-    ROUND(AVG(Delay_Days), 2) AS Avg_Delay,
+    COUNT(*) AS total_orders,
+    SUM(CASE WHEN Delivery_Status = 'Delayed' THEN 1 ELSE 0 END) AS delayed_orders,
     ROUND(
-        (SUM(CASE WHEN Delivery_Status = 'Delayed' THEN 1 ELSE 0 END) * 100.0) / COUNT(*),
+        SUM(CASE WHEN Delivery_Status = 'Delayed' THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 
         2
-    ) AS Late_Percentage
+    ) AS delay_percentage
 FROM supply_chain_dataset
 GROUP BY Region
-ORDER BY Late_Percentage DESC;
+ORDER BY delay_percentage DESC;
