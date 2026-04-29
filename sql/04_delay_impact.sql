@@ -1,9 +1,16 @@
+/*
+Goal: Measure overall business impact of delays
+*/
+
+-- Total delay days
 SELECT 
-    COUNT(*) AS Total_Orders,
-    SUM(CASE WHEN Delivery_Status = 'Delayed' THEN 1 ELSE 0 END) AS Delayed_Orders,
+    SUM(Delay_Days) AS total_delay_days
+FROM supply_chain_dataset;
+
+-- Overall delay percentage
+SELECT 
     ROUND(
-        (SUM(CASE WHEN Delivery_Status = 'Delayed' THEN 1 ELSE 0 END) * 100.0) / COUNT(*),
+        SUM(CASE WHEN Delivery_Status = 'Delayed' THEN 1 ELSE 0 END) * 100.0 / COUNT(*),
         2
-    ) AS Delay_Percentage,
-    SUM(Delay_Days) AS Total_Delay_Days
+    ) AS overall_delay_percentage
 FROM supply_chain_dataset;
