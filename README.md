@@ -1,6 +1,6 @@
 # Supply Chain Delay & Performance Analysis
 
-![Dashboard](images/dashboard_preview.png)
+<img src="images/dashboard_preview.png" width="800"/>
 
 ## 📊 Project Overview
 
